@@ -55,7 +55,7 @@ fn my_system(my_singleton: MySingletonParam) {
     // or panic
     let my_asset = my_singleton.unwrap();
 
-    // `MySingletonMut` has `get_mut` and `unwrap_mut`
+    // `AssetSingletonMut` has `get_mut` and `unwrap_mut`
 }
 ```
 

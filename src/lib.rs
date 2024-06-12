@@ -35,8 +35,12 @@ where
     }
 
     /// Get the asset and panic if it doesn't exist
+    #[track_caller]
     pub fn unwrap(&self) -> &T::Asset {
-        self.get().unwrap()
+        match self.get() {
+            Some(asset) => asset,
+            None => panic!("asset not loaded for `AssetSingleton::unwrap`"),
+        }
     }
 }
 
@@ -64,12 +68,20 @@ where
     }
 
     /// Get the asset and panic if it doesn't exist
+    #[track_caller]
     pub fn unwrap(&self) -> &T::Asset {
-        self.get().unwrap()
+        match self.get() {
+            Some(asset) => asset,
+            None => panic!("asset not loaded for `AssetSingletonMut::unwrap`"),
+        }
     }
 
     /// Get the asset mutably and panic if it doesn't exist
+    #[track_caller]
     pub fn unwrap_mut(&mut self) -> &mut T::Asset {
-        self.get_mut().unwrap()
+        match self.get_mut() {
+            Some(asset) => asset,
+            None => panic!("asset not loaded for `AssetSingletonMut::unwrap_mut`"),
+        }
     }
 }

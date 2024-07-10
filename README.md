@@ -74,6 +74,7 @@ seldom_singleton = "*"
 
 | Bevy | `seldom_singleton` |
 | ---- | ------------------ |
+| 0.14 | 0.2                |
 | 0.13 | 0.1                |
 
 ## License

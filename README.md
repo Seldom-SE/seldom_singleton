@@ -1,5 +1,7 @@
 # `seldom_singleton`
 
+### I don't really use this anymore, so I'll stop updating it. Feel free to fork.
+
 [![Crates.io](https://img.shields.io/crates/v/seldom_singleton.svg)](https://crates.io/crates/seldom_singleton)
 [![MIT/Apache 2.0](https://img.shields.io/badge/license-MIT%2FApache-blue.svg)](https://github.com/Seldom-SE/seldom_singleton#license)
 [![Crates.io](https://img.shields.io/crates/d/seldom_singleton.svg)](https://crates.io/crates/seldom_singleton)
